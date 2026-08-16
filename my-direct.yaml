@@ -1,0 +1,7 @@
+# 自建一层补充规则集：我认定的国内域名 → DIRECT
+# 上传到 GitHub 仓库后，将 main-3tier.yaml 中 my_direct 的 url 替换为真实地址
+# 格式: 每行一个域名（domain 行为，自动覆盖所有子域名），# 开头为注释
+payload:
+  # 示例：某国内服务被误判走了代理，加在这里强制直连
+  #- example.cn
+  #- internal.mycompany.cn
