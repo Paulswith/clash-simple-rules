@@ -4,6 +4,7 @@ payload:
   # HuggingFace（模型/数据集下载，含 cdn-lfs 等子域名；2026-09-05 从三层兜底收编二层）
   - +.huggingface.co
   - +.hf.co
+  - +.unpkg.com
   # 示例：某国外服务不在公共规则集里，加在这里强制走代理
   #- example.com
   #- mytool.io
