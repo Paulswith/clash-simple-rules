@@ -5,6 +5,8 @@ payload:
   - +.huggingface.co
   - +.hf.co
   - +.unpkg.com
+  - +.archlinux.org
+  - +.pkgbuild.com
   # 示例：某国外服务不在公共规则集里，加在这里强制走代理
   #- example.com
   #- mytool.io
