@@ -5,8 +5,81 @@ payload:
   - +.huggingface.co
   - +.hf.co
   - +.unpkg.com
-  - +.archlinux.org
-  - +.pkgbuild.com
+  # ===== OS 发行版源（2026-09-18 批量收编：虚拟机/容器无法改镜像，统一走二层）=====
+  - +.archlinux.org        # 含 AUR
+  - +.pkgbuild.com         # geo.mirror.pkgbuild.com 官方 GeoDNS 镜像
+  - +.debian.org           # deb/security/snapshot
+  - +.ubuntu.com           # archive/security/ports
+  - +.launchpad.net        # PPA
+  - +.centos.org
+  - +.fedoraproject.org    # dl./mirrors./download.
+  - +.rockylinux.org
+  - +.almalinux.org
+  - +.alpinelinux.org      # dl-cdn 等，Docker 构建高频
+  - +.opensuse.org
+  - +.kali.org
+  - +.raspbian.org
+  - +.raspberrypi.com      # archive.raspberrypi.com
+  - +.manjaro.org
+  - +.gentoo.org
+  - +.voidlinux.org
+  - +.nixos.org            # cache.nixos.org 二进制缓存
+  - +.freebsd.org          # pkg.freebsd.org
+  - +.openwrt.org          # opkg（downloads.openwrt.org）
+  
+  # ===== 语言包管理器 =====
+  - +.crates.io            # 含 static./index.
+  - +.rust-lang.org        # rustup 工具链 static.rust-lang.org
+  - +.rustup.rs
+  - +.rubygems.org
+  - +.maven.org            # repo1.maven.org
+  - +.maven.apache.org     # repo.maven.apache.org
+  - +.gradle.org           # services.gradle.org 发行包
+  - +.nuget.org
+  - +.packagist.org        # PHP Composer
+  - +.pub.dev              # Dart/Flutter
+  - +.cocoapods.org
+  - +.anaconda.com         # repo.anaconda.com
+  - +.anaconda.org         # conda channels
+  - +.continuum.io         # conda 旧域名
+  - +.nodejs.org           # node 发行包
+  - +.yarnpkg.com
+  - +.hex.pm               # Erlang/Elixir
+  - +.haskell.org          # hackage
+  - +.clojars.org
+  - +.cpan.org
+  - +.conan.io             # C/C++ 包
+  
+  # ===== 容器 / 云原生 =====
+  - +.quay.io              # Red Hat 镜像仓库
+  - +.k8s.io               # registry.k8s.io / pkgs.k8s.io（k8s 官方 apt/yum）
+  - +.helm.sh              # get.helm.sh
+  - +.brew.sh              # Homebrew 本体（bottles 走 ghcr.io 已被 t2_github 覆盖）
+  
+  # ===== 常用软件官方 apt/yum 仓库 =====
+  - +.postgresql.org
+  - +.mariadb.org
+  - +.mongodb.org
+  - +.nginx.org
+  - +.redis.io
+  - +.elastic.co
+  - +.hashicorp.com        # releases./apt.releases.
+  - +.grafana.com
+  - +.nodesource.com       # Node 发行版仓库
+  - +.percona.com
+  - +.jenkins.io
+  - +.virtualbox.org
+  
+  # ===== 通用下载 =====
+  - +.sourceforge.net      # 含 <mirror>.dl.sourceforge.net
+  - +.amazonaws.com        # 大量开源 release 产物托管在 S3
+  - +.adoptium.net         # OpenJDK
+  - +.oracle.com           # JDK 下载（Oracle 名单 2026-08-16 已从二层删除）
+  - +.flathub.org          # flatpak
+  - +.snapcraft.io         # snap
+  - +.macports.org
+  - +.chocolatey.org       # Windows
+  - +.vsassets.io          # VS Code marketplace 资源包
   # 示例：某国外服务不在公共规则集里，加在这里强制走代理
   #- example.com
   #- mytool.io
